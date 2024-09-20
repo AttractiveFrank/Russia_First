@@ -1,0 +1,23 @@
+.cardViewNumber {
+  position: absolute;
+  width: 75px;
+  height: 23px;
+  background-color: var(--badgeBgColor);
+  right: 16px;
+  top: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cardViewNumber img {
+  height: 11px;
+  width: 11px !important;
+}
+
+.cardBadge {
+  background-color: var(--badgeBgColor);
+  font-size: clamp(10px, 1vw, 12px);
+  padding: 2.5px 10px;
+  margin-left: 5px;
+  border-radius: 20px;
+}

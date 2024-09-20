@@ -1,0 +1,118 @@
+.pendingCard {
+  max-width: 559px;
+  flex: 1 1 auto;
+  transition: flex-basis 0.5s ease;
+}
+
+.pendingCardContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 32px;
+}
+
+.pendingCardContent .cardDescription {
+  max-width: 355px;
+  padding: 20px 0;
+}
+
+.publicationCard {
+  padding: 16px;
+  width: 371px;
+  background-color: var(--secondaryWhiteColor);
+  border-radius: 5px;
+  flex: 1 1 auto;
+  transition: flex-basis 0.5s ease;
+
+  color: var(--primaryBgColor);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15.06px;
+  letter-spacing: -3%;
+}
+
+.pendingCard img,
+.publicationCard img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.portfolioSection {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.blogCard {
+  max-width: 403px;
+  background-color: var(--secondaryWhiteColor);
+  box-sizing: border-box;
+  padding: 30px;
+  border-radius: 5px;
+  flex: 1 1 auto;
+  transition: flex-basis 0.5s ease;
+}
+
+.textBlogCard {
+  display: grid;
+  gap: clamp(27px, 3vw, 42px);
+  color: #151515;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22.59px;
+  letter-spacing: -0.01em;
+  text-align: left;
+}
+
+.textBlogCardImg {
+  width: 108px;
+  height: 108px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.textBlogCardNumber {
+  color: #686868;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25.2px;
+  letter-spacing: -0.03em;
+}
+
+.videoBlogCard {
+  display: grid;
+  gap: 23px;
+  color: var(--primaryBgColor);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15.06px;
+  letter-spacing: -0.03em;
+}
+
+.videoBlogCardDescription {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.6px;
+  letter-spacing: -0.01em;
+}
+
+@media screen and (max-width: 1280px) {
+  .pendingCard {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pendingCard {
+    width: 100%;
+  }
+
+  .pendingCard img {
+    border-radius: 5px;
+  }
+
+  .pendingCardContent,
+  .pendingCardContent .cardDescription {
+    padding-top: 12px;
+  }
+}

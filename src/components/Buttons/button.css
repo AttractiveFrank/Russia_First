@@ -1,0 +1,183 @@
+.button {
+  display: flex;
+  align-items: center;
+  border: none;
+  gap: 10px;
+  text-align: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.defaultButton {
+  height: 38px;
+  background-color: var(--secondaryWhiteColor);
+  padding: 15px 20px;
+  border-radius: 50px;
+
+  font-family: 'Russo One';
+  color: var(--primaryBgColor);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.46px;
+  letter-spacing: -0.03em;
+}
+
+.button:hover {
+  background-color: var(--secondaryWhiteHover);
+}
+
+.blackButton {
+  background-color: var(--primaryBgColor);
+  color: var(--secondaryWhiteColor);
+}
+
+.blackButton:hover {
+  color: var(--primaryBgColor);
+}
+
+.tabButton {
+  height: 40px;
+  border-radius: 5px;
+  padding: 10px 20px;
+
+  font-family: 'Mulish';
+  font-size: clamp(14px, 1vw, 16px);
+  font-weight: 700;
+  line-height: 20.08px;
+  letter-spacing: -0.03em;
+}
+
+.smallTabButton {
+  height: 28px;
+  background-color: var(--secondaryWhiteHover);
+  padding: 10px;
+  border-radius: 5px;
+
+  font-family: 'Mulish';
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15.06px;
+  letter-spacing: -0.03em;
+}
+
+.smallTabButton:hover {
+  background-color: var(--secondaryWhiteColor);
+}
+
+.circleButton {
+  width: 43px;
+  height: 43px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.outLinedButton {
+  background-color: transparent;
+  border: 1px solid var(--primaryBgColor);
+}
+
+
+.transButton {
+  background-color: rgba(246, 246, 246, 0.22);
+  font-family: 'Mulish';
+  color: var(--secondaryWhiteColor);
+  font-weight: 700;
+}
+
+.bigTransButton {
+  padding: clamp(6.2px, 1.5vw, 18px) clamp(14px, 5vw, 30.5px);
+  border-radius: 10px;
+
+  font-size: clamp(14px, 2vw, 35px);
+  line-height: clamp(17.57px, 2vw, 44px);
+  letter-spacing: -0.05em;
+}
+
+.bigTransButtonPadding {
+  padding: clamp(6.2px, 1.5vw, 18px) clamp(5px, 4vw, 66.5px);
+}
+
+.smallTransButton {
+  height: 28px;
+  padding: 10px;
+  border-radius: 5px;
+
+  font-size: 12px;
+  line-height: 15.06px;
+  letter-spacing: -0.03em;
+}
+
+.transButton:hover {
+  color: var(--primaryBgColor);
+}
+
+.rectButton {
+  height: 20px;
+  width: 99px;
+  background-color: transparent;
+  /* background-image: url('../../assets/icon/buttonRect.png'); */
+  transform: skew(-20deg);
+  border: 1px solid var(--secondaryWhiteColor);
+
+  font-family: 'Mulish';
+  color: var(--secondaryWhiteColor);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17.57px;
+  letter-spacing: -0.07em;
+}
+
+.heroTopbutton {
+  background: var(--darkTextColor);
+  padding: 10px;
+  font-family: "Mulish";
+  font-weight: 700;
+  font-size: 12px;
+  color: var(--secondaryWhiteColor);
+  line-height: 15.06px;
+  letter-spacing: -0.03em;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.smallHeroButton {
+  background-color: var(--secondaryWhiteHover);
+  padding: 10px;
+  border-radius: 5px;
+  font-family: 'Mulish';
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15.06px;
+  letter-spacing: -0.03em;
+  cursor: pointer;
+  border: none;
+  transition: 0.5s;
+}
+
+.smallHeroButton:hover {
+  background-color: var(--secondaryWhiteColor);
+}
+
+.linkButton {
+  text-decoration: underline;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15.06px;
+  letter-spacing: -0.03em;
+}
+
+@media screen and (max-width: 480px) {
+  .bigTransButton {
+    border-radius: 3px;
+  }
+}
+
+@media (max-width: 450px) {
+  .smallHeroButton {
+    padding: 10px 5px;
+    font-size: 10px;
+  }
+}

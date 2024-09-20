@@ -1,0 +1,33 @@
+.swiperContainer {
+  padding-left: 138px !important;
+  overflow: hidden;
+}
+
+
+.swiperTitle {
+  color: var(--secondaryWhiteColor);
+  letter-spacing: -0.03em;
+}
+
+.swiper-slide {
+  width: auto !important;
+}
+
+.swiper-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.swiperGeer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+
+@media(max-width: 900px) {
+  .swiperContainer {
+    padding-left: 10px !important;
+  }
+}

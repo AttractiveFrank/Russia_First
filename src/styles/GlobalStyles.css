@@ -1,0 +1,90 @@
+:root {
+  --primaryBgColor: #171717;
+  --primaryWhiteColor: #ffffff;
+  --secondaryWhiteColor: #f9f9f9;
+  --darkTextColor: #404040;
+
+  --secondaryWhiteHover: #cfcfcf;
+
+  --badgeBgColor: #EFEFEF;
+  --badgeColor: #686868;
+}
+
+[data-theme="dark"] {}
+
+.itemCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spaceBetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.spaceAround {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.alignCenter {
+  display: flex;
+  align-items: center;
+}
+
+.flexWrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flexWrapAround {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.flexWrapBetween {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+p {
+  margin: 0;
+}
+
+.pageTitle {
+  font-family: Russo One, sans-serif;
+  font-size: clamp(40px, 6vw, 77px);
+  line-height: clamp(44px, 6vw, 93.99px);
+  color: var(--secondaryWhiteColor);
+  letter-spacing: -0.03em;
+}
+
+.sectionTitle {
+  font-family: Russo One, sans-serif;
+  font-size: clamp(30px, 4vw, 58px);
+  line-height: clamp(36.15px, 4vw, 69.89px);
+  color: var(--secondaryWhiteColor);
+}
+
+.cardBigTitle {
+  font-family: Russo One, sans-serif;
+  font-size: clamp(20px, 3vw, 30px);
+  line-height: clamp(24.1px, 1vw, 36.15px);
+}
+
+.cardTitle {
+  font-weight: 700;
+  font-size: clamp(18px, 1vw, 24px);
+  line-height: clamp(22.59px, 1vw, 30.12px);
+}
+
+.cardDescription {
+  font-size: clamp(14px, 2vw, 18px);
+  line-height: clamp(19.6px, 2vw, 25.2px);
+  text-align: left;
+}
