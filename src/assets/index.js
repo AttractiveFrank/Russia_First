@@ -84,4 +84,6 @@ export {
   smallFatUser,
   //blogs
   textBlog
+  //equipments
+
 }

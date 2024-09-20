@@ -238,6 +238,10 @@
 }
 
 @media(max-width: 640px) {
+  .footerWrapper {
+    padding: 0 10px;
+  }
+
   .footerImg {
     background-image: url(../assets/background/footerMobileBackground.png);
   }

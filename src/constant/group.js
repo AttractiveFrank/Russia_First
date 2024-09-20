@@ -195,7 +195,6 @@ const firstHeroMultiLink = [
   }
 ]
 
-
 export {
   menuItemsData, footerTopLink, swiperData,
 

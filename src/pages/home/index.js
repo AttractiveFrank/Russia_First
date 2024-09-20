@@ -4,11 +4,13 @@ import AboutSection from "./AboutSection"
 import PendingSection from "./PendingSection"
 import PortfolioSection from './PortfolioSection'
 
-import './home.css'
 import ContactSection from './ContactSection'
 import BlogSection from './BlogSection'
 
+import './home.css'
+
 const Home = () => {
+
 
 
   return (
