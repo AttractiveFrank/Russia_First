@@ -1,0 +1,14 @@
+.pageWrapper {
+  background: var(--primaryBgColor);
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
