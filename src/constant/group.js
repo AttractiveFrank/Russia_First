@@ -92,15 +92,27 @@ const swiperData = [
 ]
 
 const galleryInfo = [
-  { img: portfolio1, top: 0, width: 463, },
-  { img: portfolio2, top: 212, width: 360, },
-  { img: portfolio3, width: 259, top: 38, },
-  { img: portfolio4, width: 359, top: 27, },
-  { img: portfolio5, width: 360, top: 136, },
-  { img: portfolio6, width: 400, top: 0, },
-  { img: portfolio7, width: 260, top: 212, },
-  { img: portfolio8, width: 260, top: 145, },
-  { img: portfolio9, width: 660, top: 249, },
+  { img: portfolio1, top: 0, width: 463, title: 'Название мероприятия', subtitle: 'Место его проведения' },
+  { img: portfolio2, top: 212, width: 360, title: 'Название мероприятия', subtitle: 'Место его проведения' },
+  { img: portfolio3, width: 259, top: 38, title: 'Название мероприятия', subtitle: 'Место его проведения' },
+  { img: portfolio4, width: 359, top: 27, title: 'Название мероприятия', subtitle: 'Место его проведения' },
+  { img: portfolio5, width: 360, top: 136, title: 'Название мероприятия', subtitle: 'Место его проведения' },
+  { img: portfolio6, width: 400, top: 0, title: 'Название мероприятия', subtitle: 'Место его проведения' },
+  { img: portfolio7, width: 260, top: 212, title: 'Название мероприятия', subtitle: 'Место его проведения' },
+  { img: portfolio8, width: 260, top: 145, title: 'Название мероприятия', subtitle: 'Место его проведения' },
+  { img: portfolio9, width: 660, top: 249, title: 'Название мероприятия', subtitle: 'Место его проведения' },
+]
+
+const smallgalleryInfo = [
+  { img: portfolio1, width: 463, smallwidth: 157, smallheight: 206 },
+  { img: portfolio2, width: 360, smallwidth: 125, smallheight: 182 },
+  { img: portfolio3, width: 259, smallwidth: 124, smallheight: 182 },
+  { img: portfolio4, width: 359, smallwidth: 158, smallheight: 118 },
+  { img: portfolio7, width: 260, smallwidth: 124, smallheight: 67 },
+  { img: portfolio5, width: 360, smallwidth: 158, smallheight: 127 },
+  { img: portfolio6, width: 400, smallwidth: 300, smallheight: 265 },
+  { img: portfolio8, width: 260, smallwidth: 158, smallheight: 127 },
+  { img: portfolio9, width: 660, smallwidth: 124, smallheight: 127 },
 ]
 
 const pendingCardInfo = [
@@ -199,5 +211,5 @@ const firstHeroMultiLink = [
 export {
   menuItemsData, footerTopLink, swiperData,
 
-  galleryInfo, pendingCardInfo, publicationCardInfo, blogCardInfo, firstHeroMultiLink,
+  smallgalleryInfo, galleryInfo, pendingCardInfo, publicationCardInfo, blogCardInfo, firstHeroMultiLink,
 }
