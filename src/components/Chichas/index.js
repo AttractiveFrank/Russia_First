@@ -1,7 +1,8 @@
+import { BoxRound } from '../BoxRound'
 import './chicha.css'
 
 const BigOneChicha = ({ img }) => (
-  <div className='chichaShow' >
+  <div className='chichaShow heroOneChichas' >
     <span className='chicha-spin'>
       <img src={img} alt={img} />
     </span>
@@ -10,7 +11,7 @@ const BigOneChicha = ({ img }) => (
 
 const OneChichas = ({ img }) => (
   <span className='chicha-spin'>
-    <img src={img} alt={img} style={{ width: 'clamp(35px, 5vw, 72px)' }} />
+    <img src={img} alt={img} />
   </span>
 )
 
@@ -26,30 +27,23 @@ const TwoChichas = ({ margin, img1, img2, rotate }) => (
 )
 
 const TreeChichas = ({ img1, img2, img3 }) => (
-  <div>
-    <div className='chichaShow treeChichas'>
-      <div style={{ marginTop: '35px' }}>
-        <span className='chicha-spin'>
-          <img src={img1} alt={img1} />
-        </span>
-      </div>
-      <div style={{ margin: '5px 0 0 -5px' }}>
-        <span className='chicha-back-spin' style={{ rotate: '15deg' }} >
-          <img src={img2} alt={img2} />
-        </span>
-      </div>
-      <div style={{ margin: '65px 0 0 -12px' }}>
-        <span className='chicha-spin'>
-          <img src={img3} alt={img3} />
-        </span>
-      </div>
+  <div className='treeChichas'>
+    <BoxRound left={-29} top={54} width='30px' rotate='180deg' />
+    <BoxRound right={4} bottom={-29} width='30px' rotate='180deg' />
+    <div style={{ marginTop: '35px' }}>
+      <span className='chicha-spin'>
+        <img src={img1} alt={img1} />
+      </span>
     </div>
-    <div className='chichaHidden'>
-      <div className='oneChicha'>
-        <span className='chicha-spin'>
-          <img src={img3} alt={img3} style={{ width: '45px' }} />
-        </span>
-      </div>
+    <div style={{ margin: '5px 0 0 -5px' }}>
+      <span className='chicha-back-spin' style={{ rotate: '15deg' }} >
+        <img src={img2} alt={img2} />
+      </span>
+    </div>
+    <div style={{ margin: '65px 0 0 -12px' }}>
+      <span className='chicha-spin'>
+        <img src={img3} alt={img3} />
+      </span>
     </div>
   </div>
 )

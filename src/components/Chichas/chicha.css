@@ -38,6 +38,15 @@
   padding: 0 30px 20px 34px;
 }
 
+.heroTwoChichas {
+  left: -1px;
+  bottom: -45px;
+  width: 250px;
+  border-radius: 0 65px 0 0;
+  background-color: var(--primaryBgColor);
+  padding-top: 10px;
+}
+
 .oneChicha {
   position: absolute;
   width: 60px;

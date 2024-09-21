@@ -1,11 +1,24 @@
 import { chicha123, chicha94 } from "../../assets"
+import { BoxRound, MiddleChichaRound, MiddleRound, SmallChichaRound, SmallRound } from "../../components/BoxRound"
 import { BlackButton, DefaultButton, SmallTabButton, SmallTransButton } from "../../components/Buttons"
-import { BigOneChicha, TwoChichas } from "../../components/Chichas"
+import { TwoChichas } from "../../components/Chichas"
 import { menuItemsData } from "../../constant/group"
 
 const HeroSection = () => {
 
   const buttonGroupClassInfo = ['firstGroup', 'secondGroup', 'thirdGroup',]
+
+  // const valuse = ['10', '20', '30', '40', '50', '60', '70', '80', '90']
+  // valuse.map((value, index) => {
+  //   const radians = (value * Math.PI) / 180;
+
+  //   const sine = Math.sin(radians);  // Calculate sine
+  //   const cosine = Math.cos(radians);
+
+  //   let x = 100 - 100 * cosine
+  //   let y = 100 * sine
+  //   console.log(index + '-----' + x + ' , ' + y)
+  // })
 
   return (
     <div style={{ position: 'relative' }}>
@@ -30,18 +43,30 @@ const HeroSection = () => {
               ))}
             </div>
           </div>
-          <div className="flexWrap itemCenter" style={{ gap: '12px', marginTop: '40px', marginBottom: '20px' }}>
+          <div className="flexWrap itemCenter" style={{ gap: '12px', marginTop: '40px', marginBottom: '20px', padding: '0 40px' }}>
             <DefaultButton title='лУЧШИЕ КЕЙСЫ' />
             <BlackButton title='зАПОЛНИТЬ БРИФ' />
           </div>
         </div>
       </div>
       <div>
-        <div style={{ position: 'absolute', right: 0, bottom: 0 }}>
-          <BigOneChicha img={chicha94} />
+        <div className="chichaHidden">
+          <SmallChichaRound right={-1} bottom={75} rotate={'90deg'} />
+          <SmallChichaRound left={-1} bottom={75} rotate={'180deg'} />
+          <SmallRound right={-1} top={-1} />
+          <SmallRound left={-1} top={-1} rotate={'-90deg'} />
+
         </div>
-        <div style={{ position: 'absolute', left: 0, bottom: -45 }}>
-          <TwoChichas img1={chicha94} img2={chicha123} />
+
+        <div className="chichaShow">
+          <MiddleRound right={-1} top={-1} />
+          <MiddleRound left={-1} top={-1} rotate='-90deg' />
+          <MiddleChichaRound flag={true} right={-1} bottom={-5} rotate='90deg' />
+          <div className="chichaIndex heroTwoChichas">
+            <TwoChichas img1={chicha94} img2={chicha123} />
+            <BoxRound left='0px' top='-49px' width='50px' />
+            <BoxRound right='-47px' bottom='43px' width='50px' />
+          </div>
         </div>
       </div>
     </div>
