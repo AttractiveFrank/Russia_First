@@ -169,6 +169,18 @@
   letter-spacing: -0.03em;
 }
 
+.questionButton {
+  background-color: var(--secondaryWhiteHover);
+  height: clamp(27px, 2.5vw, 33px);
+  display: flex;
+  align-items: center;
+  padding: 10px clamp(5px, 0.5vw, 10px);
+  border-radius: 5px;
+  font-size: clamp(10px, 1.5vw, 18px);
+  line-height: clamp(12.55px, 2vw, 25.2px);
+  letter-spacing: -0.03em;
+}
+
 @media screen and (max-width: 480px) {
   .bigTransButton {
     border-radius: 3px;

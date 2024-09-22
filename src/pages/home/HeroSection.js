@@ -31,8 +31,8 @@ const HeroSection = () => {
             </div>
           </div>
           <div className="flexWrap itemCenter" style={{ gap: '12px', marginTop: '40px', marginBottom: '20px' }}>
-            <DefaultButton title='лУЧШИЕ КЕЙСЫ' />
-            <BlackButton title='зАПОЛНИТЬ БРИФ' />
+            <DefaultButton title='ЛУЧШИЕ КЕЙСЫ' />
+            <BlackButton title='ЗАПОЛНИТЬ БРИФ' />
           </div>
         </div>
       </div>

@@ -28,12 +28,22 @@ import chicha94 from './chicha/chicha94.png'
 import chicha102 from './chicha/chicha102.png'
 import chicha107 from './chicha/chicha107.png'
 import chicha123 from './chicha/chicha123.png'
+import bigChicha from './chicha/bigChicha.png'
+
 
 //backgrounds
 import heroVideo from './background/heroVideo.gif'
 import design from './background/design.png'
 import roundWhite from './background/roundWhite.png'
 import heroBgImg from './background/heroBgImg.png'
+
+//eventworks
+import event1 from './eventworks/event1.png'
+import event2 from './eventworks/event2.png'
+import event3 from './eventworks/event3.png'
+import event4 from './eventworks/event4.png'
+import event5 from './eventworks/event5.png'
+import event6 from './eventworks/event6.png'
 
 //avatar
 import smallFatUser from './avatar/smallFatUser.png'
@@ -71,7 +81,7 @@ export {
   darkAdd, darkTelegram, darkVK, darkArrowup, darkSmallUser, darkTelegramRound, bigfooterLogo, hambuger, smallfooterLogo, swiperGeer, darkPlay,
   lightArrow, whiteMail, whitePhone, downArrow, search,
   //chichas
-  chicha35, chicha72, chicha94, chicha102, chicha107, chicha123,
+  chicha35, chicha72, chicha94, chicha102, chicha107, chicha123, bigChicha,
   //backgrounds
   heroVideo, design, roundWhite, heroBgImg,
   //portfolios
@@ -83,5 +93,8 @@ export {
   //avatars
   smallFatUser,
   //blogs
-  textBlog
+  textBlog,
+  //eventworks
+  event1, event2, event3, event4, event5, event6,
+
 }

@@ -19,7 +19,7 @@ const Header = () => {
       <img src={logo} alt="logo" />
       <div className="alignCenter headerInput">
         <img src={search} alt='search' />
-        <input placeholder="пОИСК" />
+        <input placeholder="ПОИСК" />
       </div>
       <p className="phoneNumber">+7 (495) 720-12-82</p>
       <div className="circleBtnWrapper">

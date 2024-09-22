@@ -15,7 +15,7 @@ const NewPage = () => {
         )}
       </div>
       <>
-        <DefaultButton title='оСТАВИТЬ ЗАЯВКУ' /> <br />
+        <DefaultButton title='ОСТАВИТЬ ЗАЯВКУ' /> <br />
 
         <BlackButton title='ПОДРОБНЕЕ' /> <br />
 

@@ -1,0 +1,61 @@
+.lampChichaSquare {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.questionButtonGroup {
+    display: grid;
+    gap: 84px
+}
+
+
+.showConceptsm {
+    font-family: Russo One, sans-serif;
+    font-size: clamp(20px, 3vw, 30px);
+    font-weight: 400;
+    color: var(--secondaryWhiteColor);
+}
+
+.showConceptBasis {
+    font-size: clamp(14px, 2vw, 24px);
+    color: var(--secondaryWhiteColor);
+}
+
+.showConceptQuestions {
+    font-size: 24px;
+    color: var(--secondaryWhiteColor);
+    margin-bottom: clamp(21px, 4vw, 60px);
+}
+
+.chichaGroup {
+    margin-top: clamp(40px, 9vw, 80px);
+}
+
+.chichaGroup img {
+    width: 275.7px;
+    height: 281.31px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 1180px) {
+    .lampChichaSquare {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .chichaGroup {
+        order: -1;
+    }
+
+    .questionButtonGroup {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    .chichaGroup img {
+        width: 149.28px;
+        height: 152.31px;
+    }
+}

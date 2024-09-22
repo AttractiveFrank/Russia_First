@@ -18,6 +18,12 @@
   justify-content: center;
 }
 
+.itemEnd {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
 .spaceBetween {
   display: flex;
   align-items: center;

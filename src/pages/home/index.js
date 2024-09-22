@@ -7,6 +7,7 @@ import PortfolioSection from './PortfolioSection'
 import './home.css'
 import ContactSection from './ContactSection'
 import BlogSection from './BlogSection'
+import EventWorks from '../../components/EventWorks'
 
 const Home = () => {
 
@@ -24,6 +25,7 @@ const Home = () => {
         <ContactSection />
         <BlogSection />
       </div>
+      <EventWorks />
     </div>
   )
 }

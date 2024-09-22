@@ -1,4 +1,10 @@
 import {
+  event1,
+  event2,
+  event3,
+  event4,
+  event5,
+  event6,
   pending1, pending2,
   portfolio1, portfolio2, portfolio3, portfolio4, portfolio5, portfolio6, portfolio7, portfolio8, portfolio9,
   publication1, publication2, publication3, publication4, publication5, publication6,
@@ -195,9 +201,45 @@ const firstHeroMultiLink = [
   }
 ]
 
+const eventCardInfo = [
+  {
+    img: event1,
+    title: 'Частные мероприятия',
+    tags: ['Дни рождения', 'Свадьбы'],
+  },
+  {
+    img: event2,
+    title: 'Корпоративные и деловые',
+    tags: ['Корпоративы', 'Конференции'],
+  },
+  {
+    img: event3,
+    title: 'Городские праздники',
+    tags: ['Государства', 'Муниципалитеты'],
+  },
+  {
+    img: event4,
+    title: 'ТВ-проекты',
+    tags: ['Студия', 'Открытые площадки'],
+  },
+  {
+    img: event5,
+    title: 'Благотворительные мероприятия',
+    tags: ['Мемориальные концерты'],
+  },
+  {
+    img: event6,
+    title: 'Cпортивные события',
+    tags: ['Стадионы', 'Спорткомлексы'],
+  },
+]
+
+
 
 export {
   menuItemsData, footerTopLink, swiperData,
 
   galleryInfo, pendingCardInfo, publicationCardInfo, blogCardInfo, firstHeroMultiLink,
+
+  eventCardInfo,
 }

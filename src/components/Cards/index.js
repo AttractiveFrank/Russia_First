@@ -56,6 +56,23 @@ const VideoBlogCard = ({ item }) => (
   </div>
 )
 
+const EventWorksCard = ({ item }) => (
+  <div className='eventWorksCard'>
+    <div style={{ position: 'relative' }}>
+      <img src={item.img} alt='eventWorksImage' />
+    </div>
+    <div style={{ padding: 'clamp(20px, 2vw, 25px) 0 clamp(20px, 2vw, 25px) 0', }}>
+      <p className='eventTitle'>{item.title}</p>
+    </div>
+    {
+      item.tags.map((tag, index) => (
+        <button key={index} className="eventTags" >{tag}</button>
+      ))
+    }
+  </div>
+)
+
 export {
   PendingCard, PublicationCard, TextBlogCard, VideoBlogCard,
+  EventWorksCard,
 }

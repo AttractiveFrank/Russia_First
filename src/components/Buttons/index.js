@@ -60,6 +60,10 @@ const LinkButton = ({ title }) => (
   <span className='linkButton'>{title}</span>
 )
 
+const QuestionButton = ({ title }) => (
+  <button className="button questionButton">{title}</button>
+)
+
 export {
   DefaultButton,
   BlackButton,
@@ -72,4 +76,5 @@ export {
   HeroTopButton,
   SmallHeroLinkButton,
   LinkButton,
+  QuestionButton
 }
