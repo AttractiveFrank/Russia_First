@@ -11,6 +11,7 @@ import darkSmallUser from './icon/darkSmallUser.png'
 import darkTelegramRound from './icon/darkTelegramRound.png'
 import hambuger from './icon/hambuger.png'
 import downArrow from './icon/downArrow.png'
+import greySearch from './icon/greySearch.png'
 
 import lightArrow from './icon/lightArrow.png'
 import bigfooterLogo from './icon/bigfooterLogo.png'
@@ -75,11 +76,25 @@ import publication6 from './publication/publication6.png'
 
 import textBlog from './blog/textBlog.png'
 
+//casecatalogpics
+import caseCatalogPic1 from './casecatalog/CasesCatalog1.png'
+import caseCatalogPic2 from './casecatalog/CasesCatalog2.png'
+import caseCatalogPic3 from './casecatalog/CasesCatalog3.png'
+import caseCatalogPic4 from './casecatalog/CasesCatalog4.png'
+import caseCatalogPic5 from './casecatalog/CasesCatalog5.png'
+import caseCatalogPic6 from './casecatalog/CasesCatalog6.png'
+import caseCatalogPic7 from './casecatalog/CasesCatalog7.png'
+import caseCatalogPic8 from './casecatalog/CasesCatalog8.png'
+
+import starIcon from './icon/star.png'
+import addressIcon from './icon/address.png'
+
 export {
   //icons
   logo,
-  darkAdd, darkTelegram, darkVK, darkArrowup, darkSmallUser, darkTelegramRound, bigfooterLogo, hambuger, smallfooterLogo, swiperGeer, darkPlay,
+  darkAdd, darkTelegram, darkVK, darkArrowup, darkSmallUser, darkTelegramRound, bigfooterLogo, hambuger, smallfooterLogo, swiperGeer, darkPlay, greySearch,
   lightArrow, whiteMail, whitePhone, downArrow, search,
+  addressIcon, starIcon,
   //chichas
   chicha35, chicha72, chicha94, chicha102, chicha107, chicha123, bigChicha,
   //backgrounds
@@ -96,5 +111,7 @@ export {
   textBlog,
   //eventworks
   event1, event2, event3, event4, event5, event6,
+  //casecatalogpic
+  caseCatalogPic1, caseCatalogPic2, caseCatalogPic3, caseCatalogPic4, caseCatalogPic5, caseCatalogPic6, caseCatalogPic7, caseCatalogPic8,
 
 }

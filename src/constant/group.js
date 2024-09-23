@@ -1,4 +1,13 @@
 import {
+  addressIcon,
+  caseCatalogPic1,
+  caseCatalogPic2,
+  caseCatalogPic3,
+  caseCatalogPic4,
+  caseCatalogPic5,
+  caseCatalogPic6,
+  caseCatalogPic7,
+  caseCatalogPic8,
   event1,
   event2,
   event3,
@@ -8,6 +17,7 @@ import {
   pending1, pending2,
   portfolio1, portfolio2, portfolio3, portfolio4, portfolio5, portfolio6, portfolio7, portfolio8, portfolio9,
   publication1, publication2, publication3, publication4, publication5, publication6,
+  starIcon,
   textBlog,
 } from "../assets"
 
@@ -234,12 +244,108 @@ const eventCardInfo = [
   },
 ]
 
+const CaseCatalogSelectBoxInfo = [
+  {
+    label: 'Вид мероприятия',
+    option: ['Все виды', 'aaa', 'bbb']
+  },
+  {
+    label: 'Год проведения',
+    option: ['Все года']
+  },
+  {
+    label: 'Площадка',
+    option: ['Все площадки']
+  },
+  {
+    label: 'Город',
+    option: ['Все города']
+  },
+  {
+    label: 'Оборудование',
+    option: ['Все типы']
+  },
+  {
+    label: 'Хедлайнер',
+    option: ['Все артисты']
+  },
+]
 
+const CaseCatalogCardInfo = [
+  {
+    img: caseCatalogPic1,
+    date: 'Февраль 2024',
+    city: 'Москва',
+    topic: 'Частный День Рождения',
+    type: 'частное',
+    icon: addressIcon,
+    address: 'Cristal Room Baccarat',
+  },
+  {
+    img: caseCatalogPic2,
+    date: 'Апрель 2024',
+    city: '6 городов',
+    topic: 'Программа «Подари Любовь»',
+    type: 'тур',
+    icon: starIcon,
+    artist: 'Cristal Room Baccarat',
+  },
+  {
+    img: caseCatalogPic3,
+    date: 'Февраль 2024',
+    city: 'Москва',
+    topic: 'Водокачка 2024',
+    type: 'корпоративное',
+    icon: addressIcon,
+    address: 'Экспоцентр СПБ',
+  },
+  {
+    img: caseCatalogPic4,
+    date: 'Май 2024',
+    city: 'Москва',
+    topic: 'День города Реутова',
+    type: 'городское',
+    icon: addressIcon,
+    address: 'Cristal Room Baccarat',
+  },
+  {
+    img: caseCatalogPic5,
+    date: 'Февраль 2024',
+    city: 'Москва',
+    topic: 'Частный День Рождения',
+    type: 'частное',
+    icon: addressIcon,
+    address: 'Cristal Room Baccarat',
+  },
+  {
+    img: caseCatalogPic6,
+    date: 'Февраль 2024',
+    city: 'Москва',
+    topic: 'Программа «Подари Любовь»',
+    type: 'тур',
+    icon: starIcon,
+    artist: 'Ирина Круг',
+  },
+  {
+    img: caseCatalogPic7,
+    topic: 'Частный День Рождения',
+    type: 'частное',
+    icon: addressIcon,
+    address: 'Cristal Room Baccarat',
+  },
+  {
+    img: caseCatalogPic8,
+    topic: 'Программа «Подари Любовь» ',
+    type: 'тур',
+    icon: starIcon,
+    artist: 'Ирина Круг',
+  },
+]
 
 export {
   menuItemsData, footerTopLink, swiperData,
 
   galleryInfo, pendingCardInfo, publicationCardInfo, blogCardInfo, firstHeroMultiLink,
 
-  eventCardInfo,
+  eventCardInfo, CaseCatalogSelectBoxInfo, CaseCatalogCardInfo,
 }

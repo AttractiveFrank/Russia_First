@@ -21,3 +21,18 @@
   margin-left: 5px;
   border-radius: 20px;
 }
+
+
+.caseCatalogCardBadgeButton {
+  cursor: pointer;
+  padding: 5px 10px;
+  width: fit-content;
+  margin: 5px;
+  background-color: rgba(239, 239, 239, 0.13);
+  /* Transparent */
+  backdrop-filter: blur(2.5px);
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-size: 12px;
+}

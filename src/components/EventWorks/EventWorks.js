@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import './style.css';
+import './EventWorksStyle.css';
 import { EventWorksCard } from "../Cards";
 import { eventCardInfo } from "../../constant/group";
 
@@ -19,7 +19,7 @@ const EventWorks = () => {
     };
     const visibleCards = isMobile && !showAll ? eventCardInfo.slice(0, 3) : eventCardInfo;
     return (
-        <div className="wapper">
+        <div className="wrapper">
             <div className="container">
                 <div className="section" style={{ textAlign: 'center' }}>
                     <div className="sectionHeader">

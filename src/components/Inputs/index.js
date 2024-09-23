@@ -1,4 +1,6 @@
+import React from 'react';
 import './input.css'
+import { greySearch } from '../../assets';
 
 export const Input = ({ item, handleChange }) => {
   return (
@@ -13,7 +15,6 @@ export const Input = ({ item, handleChange }) => {
   )
 }
 
-
 export const TextArea = ({ name, placeholder, onChange, value }) => {
   return (
     <textarea
@@ -25,3 +26,16 @@ export const TextArea = ({ name, placeholder, onChange, value }) => {
       required />
   )
 }
+
+export const SearchInputBasic = () => {
+  return (
+    <div className="searchSquare alignCenter">
+      <img src={greySearch} alt='greySearch' />
+      <input type="text" className="searchInput" placeholder="Название кейса, формат, город" />
+    </div>
+  )
+};
+
+
+
+

@@ -3,7 +3,8 @@ import { firstHeroMultiLink } from '../../constant/group'
 import { heroBgImg } from '../../assets'
 import './visualization.css'
 import ShowConcept from './components/ShowConcept'
-import EventWorks from '../../components/EventWorks'
+import CaseCatalog from '../../components/CaseCatalog/CaseCatalog'
+import EventWorks from '../../components/EventWorks/EventWorks'
 
 const Visualization = () => {
   return (
@@ -11,6 +12,7 @@ const Visualization = () => {
       <HeroSample firstHeroMultiLink={firstHeroMultiLink} bgUrl={heroBgImg} />
       {/* <ShowConcept /> */}
       <EventWorks />
+      <CaseCatalog />
     </div>
   )
 }

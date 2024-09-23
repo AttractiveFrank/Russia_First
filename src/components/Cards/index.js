@@ -1,7 +1,8 @@
 import React from 'react'
 import { BigArrowBlackButton, BlackButton, LinkButton } from '../Buttons'
-import { CardBadge, CardViewNumber } from '../Badges'
+import { CardBadge, CardViewNumber, CaseCatalogAddressArtist, CaseCatalogCardBadge } from '../Badges'
 import './card.css'
+import { addressIcon, starIcon } from '../../assets'
 
 const PendingCard = ({ item }) => (
   <div className='pendingCard'>
@@ -15,24 +16,6 @@ const PendingCard = ({ item }) => (
       </div>
       <BlackButton title='ПОДРОБНЕЕ' />
     </div>
-  </div>
-)
-
-const PublicationCard = ({ item }) => (
-  <div className='publicationCard'>
-    <div style={{ position: 'relative' }}>
-      <img src={item.img} alt='publicationImage' />
-      <CardViewNumber value={item.viewNumber} />
-    </div>
-    <div className='spaceBetween' style={{ padding: 'clamp(20px, 4vw, 25px) 0 clamp(8px, 2vw, 12px) 0' }}>
-      <p className='cardTitle'>{item.title}</p>
-      <div className='alignCenter'>
-        <CardBadge title='Ресторан' />
-        <CardBadge title='Ещё 6' />
-      </div>
-    </div>
-    <p style={{ paddingBottom: 'clamp(20px, 4vw, 25px)' }}>{item.description}</p>
-    <BlackButton title='ПОДРОБНЕЕ' />
   </div>
 )
 
@@ -64,15 +47,63 @@ const EventWorksCard = ({ item }) => (
     <div style={{ padding: 'clamp(20px, 2vw, 25px) 0 clamp(20px, 2vw, 25px) 0', }}>
       <p className='eventTitle'>{item.title}</p>
     </div>
-    {
-      item.tags.map((tag, index) => (
-        <button key={index} className="eventTags" >{tag}</button>
-      ))
-    }
+    <div>
+      {
+        item.tags.map((tags, index) => (
+          <button key={index} className="eventTags" >{tags}</button>
+        ))
+      }
+    </div>
   </div>
 )
 
+const PublicationCard = ({ item }) => (
+  <div className='publicationCard'>
+    <div style={{ position: 'relative' }}>
+      <img src={item.img} alt='publicationImage' />
+      <CardViewNumber value={item.viewNumber} />
+    </div>
+    <div className='spaceBetween' style={{ padding: 'clamp(20px, 4vw, 25px) 0 clamp(8px, 2vw, 12px) 0' }}>
+      <p className='cardTitle'>{item.title}</p>
+      <div className='alignCenter'>
+        <CardBadge title='Ресторан' />
+        <CardBadge title='Ещё 6' />
+      </div>
+    </div>
+    <p style={{ paddingBottom: 'clamp(20px, 4vw, 25px)' }}>{item.description}</p>
+    <BlackButton title='ПОДРОБНЕЕ' />
+  </div>
+)
+
+const CaseCatalogCard = ({ item }) => (
+  <div className='caseCatalogCard'>
+    <div style={{ position: 'relative' }}>
+      <img src={item?.img} alt='caseCatalogImage' />
+      <div style={{ position: 'absolute', top: '10px', right: '12px', display: 'flex', flexDirection: 'column', alignItems: 'end' }} >
+        {item.date && <CaseCatalogCardBadge label={item.date} />}
+        {item.city && <CaseCatalogCardBadge label={item.city} />}
+      </div>
+    </div>
+    <div className='caseCatalogParagraph'>
+      <p className='caseCatalogTopic'>{item.topic}</p>
+      <p className='caseCatalogType'>{item.type}</p>
+    </div>
+    <div className='CaseCatalogIconAddress'>
+      <img
+        src={item.icon}
+        alt='caseCatalogIcon'
+        style={{
+          width: item.icon === addressIcon ? '8px' : '11px',  // Conditional width
+          height: item.icon === addressIcon ? '10px' : '11px',  // Conditional height
+        }}
+      />
+      {item.address && <p>{item.address}</p>}
+      {item.artist && <p>{item.artist}</p>}
+    </div>
+  </div>
+);
+
 export {
   PendingCard, PublicationCard, TextBlogCard, VideoBlogCard,
-  EventWorksCard,
+  EventWorksCard, CaseCatalogCard
 }

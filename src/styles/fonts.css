@@ -190,3 +190,29 @@
   font-size: clamp(151.34px, 30vw, 299.82px);
   line-height: clamp(182.36px, 35vw, 361.28px);
 }
+
+.casesTitle {
+  width: 86px;
+  height: 21px;
+  font-family: 'Russo One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: -0.03em;
+  color: #F9F9F9;
+
+}
+
+.casesNum {
+  width: 86px;
+  height: 21px;
+  font-family: 'Russo One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: -0.03em;
+  color: #686868;
+
+}

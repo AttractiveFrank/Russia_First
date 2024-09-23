@@ -8,6 +8,9 @@ const DefaultButton = ({ title }) => (
 const BlackButton = ({ title }) => (
   <button className="button defaultButton blackButton" >{title}</button>
 )
+const BlackButtonBorderWhite = ({ title }) => (
+  <button className="button defaultButton blackButton" style={{ border: '1px solid white' }} >{title}</button>
+)
 
 const TabButton = ({ icon, title }) => (
   <button className='button tabButton'><img src={icon} alt='darkAdd' />{title}</button>
@@ -64,6 +67,7 @@ const QuestionButton = ({ title }) => (
   <button className="button questionButton">{title}</button>
 )
 
+
 export {
   DefaultButton,
   BlackButton,
@@ -76,5 +80,6 @@ export {
   HeroTopButton,
   SmallHeroLinkButton,
   LinkButton,
-  QuestionButton
+  QuestionButton,
+  BlackButtonBorderWhite
 }

@@ -18,3 +18,30 @@
   border: none;
   outline: none;
 }
+
+/* Container for the search bar */
+
+.searchSquare {
+  width: 100%;
+  height: 50px;
+  padding: 16px clamp(12px, 3vw, 15px);
+  gap: 10px;
+  border-radius: 5px;
+  border: 1px solid #B0B0B0;
+  box-sizing: border-box;
+  margin-top: 30px;
+  margin-bottom: clamp(40px, 2vw, 55px);
+}
+
+.searchSquare img {
+  cursor: pointer;
+}
+
+.searchInput,
+.searchInput:active {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #B0B0B0;
+}

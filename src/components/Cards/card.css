@@ -116,3 +116,67 @@
     padding-top: 12px;
   }
 }
+
+.caseCatalogCard {
+  padding-top: 30px;
+  width: 317px;
+  height: 175px;
+  border-radius: 5px;
+  border: 0px, 0px, 1px, 0px;
+  flex: 1 1 auto;
+  transition: flex-basis 0.5s ease;
+  margin-bottom: clamp(20px, 4vw, 66px);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15.06px;
+  letter-spacing: -3%;
+}
+
+.caseCatalogTopic {
+  font-size: 16px;
+  font: Mulish;
+  font-weight: 700;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #FFFFFF;
+}
+
+.caseCatalogType {
+  font-size: 14px;
+  font: Mulish;
+  font-weight: 700;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #B5B5B5;
+}
+
+.caseCatalogAddress {
+  font-size: 12px;
+  font: Mulish;
+  font-weight: 700;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #FFFFFF;
+
+}
+
+.caseCatalogParagraph {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  /* width: 100%; */
+
+}
+
+.CaseCatalogIconAddress {
+  color: white;
+  display: flex;
+  justify-items: first baseline;
+  gap: 5px;
+  padding-top: 16px;
+  align-items: center;
+}

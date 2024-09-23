@@ -12,4 +12,16 @@ const CardBadge = ({ title }) => (
   <div className='cardBadge'>{title}</div>
 )
 
-export { CardViewNumber, CardBadge }
+const CaseCatalogCardBadge = ({ label }) => (
+  <button className='caseCatalogCardBadgeButton'>
+    {label}
+  </button>
+);
+
+
+
+
+
+
+
+export { CardViewNumber, CardBadge, CaseCatalogCardBadge, }
