@@ -79,7 +79,7 @@ const CaseCatalogCard = ({ item }) => (
   <div className='caseCatalogCard'>
     <div style={{ position: 'relative' }}>
       <img src={item?.img} alt='caseCatalogImage' />
-      <div style={{ position: 'absolute', top: '10px', right: '12px', display: 'flex', flexDirection: 'column', alignItems: 'end' }} >
+      <div style={{ position: 'absolute', top: '10px', right: '10px', display: 'flex', flexDirection: 'column', alignItems: 'end' }} >
         {item.date && <CaseCatalogCardBadge label={item.date} />}
         {item.city && <CaseCatalogCardBadge label={item.city} />}
       </div>

@@ -4,6 +4,7 @@ import ComboBox from "../ComboBox/ComboBox";
 import './CaseCatalog.css';
 import { CaseCatalogCard } from "../Cards";
 import { CaseCatalogCardInfo } from "../../constant/group";
+import { DefaultButton } from "../Buttons";
 
 
 const CaseCatalog = () => {
@@ -16,17 +17,22 @@ const CaseCatalog = () => {
                         <p className="casesNum">16</p>
                     </div>
                     <SearchInputBasic />
-                    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                    <div className="caseCatalogContainer">
                         <ComboBox />
-                        <div className="caseCatalogCardContainer">
-                            {
-                                CaseCatalogCardInfo.map((item, index) => (
-                                    <CaseCatalogCard key={index} item={item} />
-                                ))
-                            }
+                        <div>
+                            <div className="caseCatalogCardContainer ">
+
+                                {
+                                    CaseCatalogCardInfo.map((item, index) => (
+                                        <CaseCatalogCard key={index} item={item} />
+                                    ))
+                                }
+                            </div>
+                            <div className="moreButton">
+                                <DefaultButton title="смотреть ещё кейсы" />
+                            </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
